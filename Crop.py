@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 # โฟลเดอร์ที่เก็บไฟล์รูปภาพ
-input_folder = r'C:\Users\user\OneDrive - Walailak University\Desktop\Img Test'
+input_folder = r'C:\Users\user\OneDrive - Walailak University\Desktop\P2'
 output_folder = r'C:\Users\user\OneDrive - Walailak University\Desktop\Crop'
 
 # ตรวจสอบว่าโฟลเดอร์ปลายทางมีอยู่หรือไม่ ถ้าไม่มีให้สร้าง

@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 # ระบุโฟลเดอร์ที่เก็บไฟล์รูปภาพ
-image_folder = r"C:\Users\user\Downloads\รูปผู้สมัครสภานักศึกษา 67-20240816T062907Z-001\รูปผู้สมัครสภานักศึกษา 67"
+image_folder = r"C:\Users\user\OneDrive - Walailak University\Desktop\Img Test"
 
 # ระบุไฟล์ Excel ที่ต้องการตรวจสอบ
 excel_file = r"C:\Users\user\Downloads\รายชื่อผู้สมัครสภานักศึกษา-67.xlsx"
@@ -32,7 +32,7 @@ else:
         df['Check'] = df[student_id_column].apply(lambda x: 1 if str(x) in image_files else 0)
 
         # ระบุที่อยู่ไฟล์ Excel ที่ต้องการบันทึก
-        output_excel_file = r"C:\Users\user\OneDrive - Walailak University\Desktop\student_data_with_images.xlsx"
+        output_excel_file = r"C:\Users\user\OneDrive - Walailak University\Desktop\student_data_with_images2.xlsx"
 
         # บันทึก DataFrame กลับไปที่ไฟล์ Excel
         try:

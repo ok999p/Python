@@ -2,8 +2,8 @@ from PIL import Image
 import os
 
 # กำหนดโฟลเดอร์ที่เก็บไฟล์รูปภาพ
-input_folder = r'C:\Users\user\Downloads\รูปผู้สมัครสภานักศึกษา 67-20240816T062907Z-001\รูปผู้สมัครสภานักศึกษา 67'
-output_folder = r'C:\Users\user\OneDrive - Walailak University\Desktop\Img Test'
+input_folder = r'C:\Users\user\Downloads\ดีลักซ์-20240817T081506Z-001\ดีลักซ์'
+output_folder = r'C:\Users\user\OneDrive - Walailak University\Desktop\Img'
 
 # ตรวจสอบว่าโฟลเดอร์ปลายทางมีอยู่หรือไม่ ถ้าไม่มีให้สร้าง
 os.makedirs(output_folder, exist_ok=True)
@@ -14,7 +14,7 @@ converted_files_count = 0
 # วนลูปผ่านไฟล์ทั้งหมดในโฟลเดอร์
 for filename in os.listdir(input_folder):
     # ตรวจสอบว่าเป็นไฟล์รูปภาพหรือไม่ (โดยนามสกุล)
-    if filename.lower().endswith(('.jpg', '.jpeg', '.jfif', '.bmp', '.gif', '.tiff')):
+    if filename.lower().endswith(('.jpg', '.jpeg', '.jfif', '.bmp', '.gif', '.tiff', 'webp')):
         try:
             # เปิดไฟล์รูปภาพ
             img_path = os.path.join(input_folder, filename)
